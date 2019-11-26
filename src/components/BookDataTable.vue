@@ -1,5 +1,7 @@
-<template>
-    <v-data-table :headers="headers" :items="desserts" :items-per-page="5" class="elevation-1"></v-data-table>
+﻿<template>
+    <div>
+        <v-data-table :headers="headers" :items="items" :items-per-page="5" class="elevation-1" show-select></v-data-table>
+    </div>
 </template>
 
 <script>
@@ -8,100 +10,73 @@
             return {
                 headers: [
                     {
-                        text: 'Dessert (100g serving)',
-                        align: 'left',
-                        sortable: false,
-                        value: 'name',
+                        "value": "name",
+                        "text": "书名"
                     },
-                    { text: 'Calories', value: 'calories' },
-                    { text: 'Fat (g)', value: 'fat' },
-                    { text: 'Carbs (g)', value: 'carbs' },
-                    { text: 'Protein (g)', value: 'protein' },
-                    { text: 'Iron (%)', value: 'iron' },
+                    {
+                        "value": "price",
+                        "text": "定价"
+                    },
+                    {
+                        "value": "brief",
+                        "text": "简介"
+                    },
+                    {
+                        "value": "singleTag",
+                        "text": "单选标签"
+                    },
+                    {
+                        "value": "multiTag",
+                        "text": "多选标签"
+                    },
+                    {
+                        "value": "singleStatus",
+                        "text": "单选状态"
+                    },
+                    {
+                        "value": "multiStatus",
+                        "text": "多选状态"
+                    },
+                    {
+                        "value": "singleColor",
+                        "text": "单选颜色"
+                    },
+                    {
+                        "value": "multiColor",
+                        "text": "多选颜色"
+                    },
+                    {
+                        "value": "singleCategory",
+                        "text": "单选分类"
+                    },
+                    {
+                        "value": "multiCategory",
+                        "text": "多选分类"
+                    },
+                    {
+                        "value": "singlePattern",
+                        "text": "单选形态"
+                    },
+                    {
+                        "value": "multiPattern",
+                        "text": "多选形态"
+                    }
                 ],
-                desserts: [
-                    {
-                        name: 'Frozen Yogurt',
-                        calories: 159,
-                        fat: 6.0,
-                        carbs: 24,
-                        protein: 4.0,
-                        iron: '1%',
-                    },
-                    {
-                        name: 'Ice cream sandwich',
-                        calories: 237,
-                        fat: 9.0,
-                        carbs: 37,
-                        protein: 4.3,
-                        iron: '1%',
-                    },
-                    {
-                        name: 'Eclair',
-                        calories: 262,
-                        fat: 16.0,
-                        carbs: 23,
-                        protein: 6.0,
-                        iron: '7%',
-                    },
-                    {
-                        name: 'Cupcake',
-                        calories: 305,
-                        fat: 3.7,
-                        carbs: 67,
-                        protein: 4.3,
-                        iron: '8%',
-                    },
-                    {
-                        name: 'Gingerbread',
-                        calories: 356,
-                        fat: 16.0,
-                        carbs: 49,
-                        protein: 3.9,
-                        iron: '16%',
-                    },
-                    {
-                        name: 'Jelly bean',
-                        calories: 375,
-                        fat: 0.0,
-                        carbs: 94,
-                        protein: 0.0,
-                        iron: '0%',
-                    },
-                    {
-                        name: 'Lollipop',
-                        calories: 392,
-                        fat: 0.2,
-                        carbs: 98,
-                        protein: 0,
-                        iron: '2%',
-                    },
-                    {
-                        name: 'Honeycomb',
-                        calories: 408,
-                        fat: 3.2,
-                        carbs: 87,
-                        protein: 6.5,
-                        iron: '45%',
-                    },
-                    {
-                        name: 'Donut',
-                        calories: 452,
-                        fat: 25.0,
-                        carbs: 51,
-                        protein: 4.9,
-                        iron: '22%',
-                    },
-                    {
-                        name: 'KitKat',
-                        calories: 518,
-                        fat: 26.0,
-                        carbs: 65,
-                        protein: 7,
-                        iron: '6%',
-                    },
-                ],
+                items: []
             }
         },
+        methods: {
+
+            load_items: function () {
+
+                this.bookManageService.book_items({ pageIndex: 1 }).then(response => {
+                    this.items = response.data.items;
+                });
+            }
+        },
+        mounted: function () {
+
+            this.load_items();
+        }
     }
 </script>
