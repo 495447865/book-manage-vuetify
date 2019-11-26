@@ -28,7 +28,6 @@ public\img\icons\msapplication-icon-144x144.png
 public\img\icons\mstile-150x150.png
 public\img\icons\safari-pinned-tab.svg
 src\App.vue
-src\main.js
 src\registerServiceWorker.js
 src\assets\logo.png
 src\assets\logo.svg

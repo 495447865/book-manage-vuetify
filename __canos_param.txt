@@ -49,7 +49,8 @@
     "Company": "harriszhang@live.cn",
     "NupkgSource": "https://package.savory.cn/repository/savory-nuget-gaea/",
     "WithAuthorize": false,
-    "WithCors": false
+    "WithCors": false,
+    "ApiHost": "http://182.254.133.153:8088"
   },
   "Server": null,
   "SubjectMap": {

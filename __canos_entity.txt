@@ -27,9 +27,10 @@
     "SqlitePath": null,
     "NupkgSource": null,
     "WithCors": false,
+    "ApiHost": "http://182.254.133.153:8088",
     "DataStatus": 1,
     "CreateTime": "2019-11-26T12:25:53",
-    "LastUpdateTime": "2019-11-26T12:25:53"
+    "LastUpdateTime": "2019-11-26T20:48:03"
   },
   "ServerEntity": null,
   "SubjectEntityList": [

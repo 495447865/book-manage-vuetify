@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// »·¾³µÄÇÐ»»
 if (process.env.NODE_ENV == 'development') {
     axios.defaults.baseURL = 'http://182.254.133.153:8088';
 }
