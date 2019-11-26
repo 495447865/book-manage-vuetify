@@ -1,4 +1,5 @@
-﻿<template>
+﻿<!--Simple Table-->
+<template>
     <v-simple-table>
         <template v-slot:default>
             <thead>
