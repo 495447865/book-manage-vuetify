@@ -54,11 +54,9 @@
 
 <script>
     export default {
-        data: function () {
-            return {
-                items: null
-            }
-        },
+        data: () => ({
+            items: null
+        }),
         methods: {
 
             load_items: function () {
