@@ -3,6 +3,10 @@ package-lock.json
 public\index.html
 src\main.js
 src\service.js
+src\components\BookSimpleTable.vue
+src\components\TagSimpleTable.vue
+src\components\CategorySimpleTable.vue
+src\components\PatternSimpleTable.vue
 scripts_mysql.sql
 
 .browserslistrc
@@ -31,7 +35,6 @@ src\App.vue
 src\registerServiceWorker.js
 src\assets\logo.png
 src\assets\logo.svg
-src\components\HelloWorld.vue
 src\plugins\vuetify.js
 src\router\index.js
 src\views\About.vue

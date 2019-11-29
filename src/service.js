@@ -4,7 +4,7 @@ if (process.env.NODE_ENV == 'development') {
     axios.defaults.baseURL = 'http://182.254.133.153:8088';
 }
 
-const bookManageService = {
+const AppService = {
 
     book_items: request => axios.post('api/book/items', request),
     book_item: request => axios.post('api/book/item', request),
@@ -70,4 +70,4 @@ const bookManageService = {
     user_profile: request => axios.post('api/user/profile', request)
 }
 
-export default bookManageService
+export default AppService

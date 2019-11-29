@@ -4,10 +4,10 @@ import './registerServiceWorker'
 import router from './router'
 import vuetify from './plugins/vuetify';
 
-import bookManageService from './service';
+import AppService from './service';
 
 Vue.config.productionTip = false;
-Vue.prototype.bookManageService = bookManageService;
+Vue.prototype.appService = AppService;
 
 new Vue({
     router,
