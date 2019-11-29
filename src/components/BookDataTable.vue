@@ -1,7 +1,5 @@
 ﻿<template>
-    <div>
-        <v-data-table :headers="headers" :items="items" :items-per-page="5" class="elevation-1" show-select></v-data-table>
-    </div>
+    <v-data-table :headers="headers" :items="items" :items-per-page="5" class="elevation-1" show-select></v-data-table>
 </template>
 
 <script>
