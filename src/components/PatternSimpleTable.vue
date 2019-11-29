@@ -35,7 +35,7 @@
             load_items: function () {
                 this.appService.pattern_items({}).then(this.pattern_items_callback)
             },
-            function (response) {
+            pattern_items_callback: function (response) {
                 this.items = response.data.items;
             },
         },
