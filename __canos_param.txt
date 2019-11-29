@@ -44,6 +44,8 @@
     "CSharpProjectConstantGuid": "BF0743CA-E573-4E94-B1E7-53CE3594FDBD",
     "CSharpProjectConvertorGuid": "6BAC86EC-D9B6-4819-8691-E130894B6047",
     "CSharpProjectConvertorImplementGuid": "46D3318F-C9A3-42F1-8B1F-94D83ED3BA83",
+    "CSharpProjectLookupGuid": "DB3FB53B-6EA1-4FBC-B858-12E2FE53DFB2",
+    "CSharpProjectLookupImplementGuid": "1A845294-3100-4F37-B22F-F14761E40BF5",
     "CSharpPort": 0,
     "Authors": "harriszhang@live.cn",
     "Company": "harriszhang@live.cn",
@@ -406,7 +408,8 @@
       "CriteriaName": "BookCriteria",
       "ServiceName": "BookService",
       "FilterProviderName": "BookFilterProvider",
-      "ValidationName": "BookValidation"
+      "ValidationName": "BookValidation",
+      "LookupProviderName": "BookLookupProvider"
     },
     "Tag": {
       "Id": 29,
@@ -520,7 +523,8 @@
       "CriteriaName": "TagCriteria",
       "ServiceName": "TagService",
       "FilterProviderName": "TagFilterProvider",
-      "ValidationName": "TagValidation"
+      "ValidationName": "TagValidation",
+      "LookupProviderName": "TagLookupProvider"
     },
     "Category": {
       "Id": 30,
@@ -654,7 +658,8 @@
       "CriteriaName": "CategoryCriteria",
       "ServiceName": "CategoryService",
       "FilterProviderName": "CategoryFilterProvider",
-      "ValidationName": "CategoryValidation"
+      "ValidationName": "CategoryValidation",
+      "LookupProviderName": "CategoryLookupProvider"
     },
     "Pattern": {
       "Id": 31,
@@ -788,7 +793,8 @@
       "CriteriaName": "PatternCriteria",
       "ServiceName": "PatternService",
       "FilterProviderName": "PatternFilterProvider",
-      "ValidationName": "PatternValidation"
+      "ValidationName": "PatternValidation",
+      "LookupProviderName": "PatternLookupProvider"
     }
   },
   "MetadataMap": {

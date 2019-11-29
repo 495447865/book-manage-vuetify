@@ -9,13 +9,14 @@
             items: [],
         }),
         mounted: function () {
-            this.load_items();
+            this.load_data();
         },
         methods: {
-            load_items: function () {
-                this.appService.category_items({}).then(this.category_items_callback)
+            load_data: function () {
+                this.appService.category_data({}).then(this.category_data_callback)
             },
-            category_items_callback: function (response) {
+            category_data_callback: function (response) {
+                this.headers = response.data.headers;
                 this.items = response.data.items;
             },
         },

@@ -6,6 +6,7 @@ if (process.env.NODE_ENV == 'development') {
 
 const AppService = {
 
+    book_data: request => axios.post('api/book/data', request),
     book_items: request => axios.post('api/book/items', request),
     book_item: request => axios.post('api/book/item', request),
     book_basic: request => axios.post('api/book/basic', request),
@@ -16,6 +17,7 @@ const AppService = {
     book_enable: request => axios.post('api/book/enable', request),
     book_disable: request => axios.post('api/book/disable', request),
 
+    tag_data: request => axios.post('api/tag/data', request),
     tag_items: request => axios.post('api/tag/items', request),
     tag_item: request => axios.post('api/tag/item', request),
     tag_basic: request => axios.post('api/tag/basic', request),
@@ -26,6 +28,7 @@ const AppService = {
     tag_enable: request => axios.post('api/tag/enable', request),
     tag_disable: request => axios.post('api/tag/disable', request),
 
+    category_data: request => axios.post('api/category/data', request),
     category_items: request => axios.post('api/category/items', request),
     category_item: request => axios.post('api/category/item', request),
     category_basic: request => axios.post('api/category/basic', request),
@@ -36,6 +39,7 @@ const AppService = {
     category_enable: request => axios.post('api/category/enable', request),
     category_disable: request => axios.post('api/category/disable', request),
 
+    pattern_data: request => axios.post('api/pattern/data', request),
     pattern_items: request => axios.post('api/pattern/items', request),
     pattern_item: request => axios.post('api/pattern/item', request),
     pattern_basic: request => axios.post('api/pattern/basic', request),
