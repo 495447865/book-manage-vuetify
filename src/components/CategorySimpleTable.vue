@@ -33,9 +33,10 @@
         },
         methods: {
             load_items: function () {
-                this.appService.category_items().then(function (response) {
-                    this.items = response.data.items;
-                })
+                this.appService.category_items({}).then(this.category_items_callback)
+            },
+            function (response) {
+                this.items = response.data.items;
             },
         },
     }

@@ -31,9 +31,10 @@
         },
         methods: {
             load_items: function () {
-                this.appService.tag_items().then(function (response) {
-                    this.items = response.data.items;
-                })
+                this.appService.tag_items({}).then(this.tag_items_callback)
+            },
+            function (response) {
+                this.items = response.data.items;
             },
         },
     }

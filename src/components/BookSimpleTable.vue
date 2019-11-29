@@ -57,7 +57,7 @@
             load_items: function () {
                 this.appService.book_items({}).then(this.book_items_callback)
             },
-            book_items_callback: function (response) {
+            function (response) {
                 this.items = response.data.items;
             },
         },
