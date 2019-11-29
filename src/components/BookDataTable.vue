@@ -66,12 +66,11 @@
             }
         },
         methods: {
-
             load_items: function () {
-
-                this.bookManageService.book_items({ pageIndex: 1 }).then(response => {
-                    this.items = response.data.items;
-                });
+                this.appService.book_items({}).then(this.load_items_callback);
+            },
+            load_items_callback: function (response) {
+                this.items = response.data.items;
             }
         },
         mounted: function () {
