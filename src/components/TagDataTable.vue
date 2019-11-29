@@ -13,9 +13,9 @@
         },
         methods: {
             load_items: function () {
-                this.appService.book_items({}).then(this.book_items_callback)
+                this.appService.tag_items({}).then(this.tag_items_callback)
             },
-            book_items_callback: function (response) {
+            tag_items_callback: function (response) {
                 this.items = response.data.items;
             },
         },

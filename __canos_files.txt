@@ -4,9 +4,13 @@ public\index.html
 src\main.js
 src\service.js
 src\components\BookSimpleTable.vue
+src\components\BookDataTable.vue
 src\components\TagSimpleTable.vue
+src\components\TagDataTable.vue
 src\components\CategorySimpleTable.vue
+src\components\CategoryDataTable.vue
 src\components\PatternSimpleTable.vue
+src\components\PatternDataTable.vue
 scripts_mysql.sql
 
 .browserslistrc
