@@ -917,82 +917,162 @@
         "Name": {
           "Name": "Name",
           "DisplayName": "书名",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "Price": {
           "Name": "Price",
           "DisplayName": "定价",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "Brief": {
           "Name": "Brief",
           "DisplayName": "简介",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "SingleTag": {
           "Name": "SingleTag",
           "DisplayName": "单选标签",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "id",
+          "SelectItemText": "tagName"
         },
         "MultiTag": {
           "Name": "MultiTag",
           "DisplayName": "多选标签",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "id",
+          "SelectItemText": "tagName"
         },
         "SingleStatus": {
           "Name": "SingleStatus",
           "DisplayName": "单选状态",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "statusId",
+          "SelectItemText": "statusName"
         },
         "MultiStatus": {
           "Name": "MultiStatus",
           "DisplayName": "多选状态",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "statusId",
+          "SelectItemText": "statusName"
         },
         "SingleColor": {
           "Name": "SingleColor",
           "DisplayName": "单选颜色",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "colorId",
+          "SelectItemText": "colorName"
         },
         "MultiColor": {
           "Name": "MultiColor",
           "DisplayName": "多选颜色",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "colorId",
+          "SelectItemText": "colorName"
         },
         "SingleCategory": {
           "Name": "SingleCategory",
           "DisplayName": "单选分类",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "categoryId",
+          "SelectItemText": "categoryName"
         },
         "MultiCategory": {
           "Name": "MultiCategory",
           "DisplayName": "多选分类",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "categoryId",
+          "SelectItemText": "categoryName"
         },
         "SinglePattern": {
           "Name": "SinglePattern",
           "DisplayName": "单选形态",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "patternId",
+          "SelectItemText": "patternName"
         },
         "MultiPattern": {
           "Name": "MultiPattern",
           "DisplayName": "多选形态",
-          "InputMethod": ""
+          "InputMethod": "SELECT",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "patternId",
+          "SelectItemText": "patternName"
         },
         "DataStatus": {
           "Name": "DataStatus",
           "DisplayName": "状态",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
           "DisplayName": "创建时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
           "DisplayName": "最后更新时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         }
       }
     },
@@ -1003,22 +1083,42 @@
         "Name": {
           "Name": "Name",
           "DisplayName": "名称",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "DataStatus": {
           "Name": "DataStatus",
           "DisplayName": "状态",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
           "DisplayName": "创建时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
           "DisplayName": "最后更新时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         }
       }
     },
@@ -1029,27 +1129,52 @@
         "CategoryId": {
           "Name": "CategoryId",
           "DisplayName": "分类编号",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "CategoryName": {
           "Name": "CategoryName",
           "DisplayName": "分类名称",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "DataStatus": {
           "Name": "DataStatus",
           "DisplayName": "状态",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
           "DisplayName": "创建时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
           "DisplayName": "最后更新时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         }
       }
     },
@@ -1060,27 +1185,52 @@
         "PatternId": {
           "Name": "PatternId",
           "DisplayName": "形态编号",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "PatternName": {
           "Name": "PatternName",
           "DisplayName": "形态名称",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "DataStatus": {
           "Name": "DataStatus",
           "DisplayName": "状态",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
           "DisplayName": "创建时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
           "DisplayName": "最后更新时间",
-          "InputMethod": ""
+          "InputMethod": "",
+          "WithRules": false,
+          "Required": false,
+          "TextMaxLength": null,
+          "SelectItemValue": "",
+          "SelectItemText": ""
         }
       }
     }
