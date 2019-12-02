@@ -3,7 +3,13 @@
         <v-text-field v-model="item.name" label="书名"></v-text-field>
         <v-text-field v-model="item.price" label="定价"></v-text-field>
         <v-text-field v-model="item.brief" label="简介"></v-text-field>
+
         <v-select v-model="item.singleTag" :items="option.singleTag" label="单选标签" item-value="id" item-text="tagName" required></v-select>
+
+        <v-radio-group v-model="item.singleTag" row>
+            <v-radio v-for="item in option.singleTag" :key="item.id" :label="item.tagName" :value="item.id"></v-radio>
+        </v-radio-group>
+
         <v-select v-model="item.multiTag" :items="option.multiTag" label="多选标签" item-value="id" item-text="tagName" required></v-select>
         <v-select v-model="item.singleStatus" :items="option.singleStatus" label="单选状态" item-value="statusId" item-text="statusName" required></v-select>
         <v-select v-model="item.multiStatus" :items="option.multiStatus" label="多选状态" item-value="statusId" item-text="statusName" required></v-select>
