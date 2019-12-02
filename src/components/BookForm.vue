@@ -3,7 +3,7 @@
         <v-text-field v-model="item.name" :rules="rule.name" label="书名" :counter="10" required></v-text-field>
         <v-text-field v-model="item.price" :rules="rule.price" label="定价" :counter="10" required></v-text-field>
         <v-text-field v-model="item.brief" :rules="rule.brief" label="简介" :counter="10" required></v-text-field>
-        <v-text-field v-model="item.singleTag" :rules="rule.singleTag" label="单选标签" :counter="10" required></v-text-field>
+        <v-select v-model="item.singleTag" :items="option.singleTag" label="单选标签" item-text="tagName" item-value="id"></v-select>
         <v-text-field v-model="item.multiTag" :rules="rule.multiTag" label="多选标签" :counter="10" required></v-text-field>
         <v-text-field v-model="item.singleStatus" :rules="rule.singleStatus" label="单选状态" :counter="10" required></v-text-field>
         <v-text-field v-model="item.multiStatus" :rules="rule.multiStatus" label="多选状态" :counter="10" required></v-text-field>
@@ -19,6 +19,7 @@
         <v-btn color="warning">Submit</v-btn>
 
         <p>{{item}}</p>
+        <p>{{option}}</p>
     </v-form>
 </template>
 
@@ -44,6 +45,9 @@
                 createTime: null,
                 lastUpdateTime: null,
             },
+            option: {
+                singleTag: [],
+            },
             rule: {
                 name: [
                     v => !!v || '书名 required.',
@@ -56,10 +60,6 @@
                 brief: [
                     v => !!v || '简介 required.',
                     v => v != null && v.length <= 10 || '简介 length > 10',
-                ],
-                singleTag: [
-                    v => !!v || '单选标签 required.',
-                    v => v != null && v.length <= 10 || '单选标签 length > 10',
                 ],
                 multiTag: [
                     v => !!v || '多选标签 required.',
@@ -119,21 +119,20 @@
                 this.appService.book_empty({}).then(this.book_empty_callback)
             },
             book_empty_callback: function (response) {
-
-                if (response.status != 1) {
+                var responseData = response.data;
+                if (responseData.status != 1) {
                     return;
                 }
-                var responseData = response.data;
-                this.singleTag_selection = responseData.singleTag;
-                this.multiTag_selection = responseData.multiTag;
-                this.singleStatus_selection = responseData.singleStatus;
-                this.multiStatus_selection = responseData.multiStatus;
-                this.singleColor_selection = responseData.singleColor;
-                this.multiColor_selection = responseData.multiColor;
-                this.singleCategory_selection = responseData.singleCategory;
-                this.multiCategory_selection = responseData.multiCategory;
-                this.singlePattern_selection = responseData.singlePattern;
-                this.multiPattern_selection = responseData.multiPattern;
+                this.option.singleTag = responseData.singleTag;
+                this.option.multiTag_selection = responseData.multiTag;
+                this.option.singleStatus_selection = responseData.singleStatus;
+                this.option.multiStatus_selection = responseData.multiStatus;
+                this.option.singleColor_selection = responseData.singleColor;
+                this.option.multiColor_selection = responseData.multiColor;
+                this.option.singleCategory_selection = responseData.singleCategory;
+                this.option.multiCategory_selection = responseData.multiCategory;
+                this.option.singlePattern_selection = responseData.singlePattern;
+                this.option.multiPattern_selection = responseData.multiPattern;
             },
         },
     }
