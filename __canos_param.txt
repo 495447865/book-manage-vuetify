@@ -922,7 +922,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "Price": {
           "Name": "Price",
@@ -932,7 +938,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "Brief": {
           "Name": "Brief",
@@ -942,107 +954,173 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "SingleTag": {
           "Name": "SingleTag",
           "DisplayName": "单选标签",
-          "InputMethod": "SELECT",
+          "InputMethod": "RADIO_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "id",
-          "SelectItemText": "tagName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "row",
+          "RadioGroupItemValue": "id",
+          "RadioGroupItemLabel": "tagName",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "MultiTag": {
           "Name": "MultiTag",
           "DisplayName": "多选标签",
-          "InputMethod": "SELECT",
+          "InputMethod": "CHECKBOX_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "id",
-          "SelectItemText": "tagName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "row",
+          "CheckboxGroupItemValue": "id",
+          "CheckboxGroupItemLabel": "tagName"
         },
         "SingleStatus": {
           "Name": "SingleStatus",
           "DisplayName": "单选状态",
-          "InputMethod": "SELECT",
+          "InputMethod": "RADIO_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "statusId",
-          "SelectItemText": "statusName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "row",
+          "RadioGroupItemValue": "statusId",
+          "RadioGroupItemLabel": "statusName",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "MultiStatus": {
           "Name": "MultiStatus",
           "DisplayName": "多选状态",
-          "InputMethod": "SELECT",
+          "InputMethod": "CHECKBOX_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "statusId",
-          "SelectItemText": "statusName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "row",
+          "CheckboxGroupItemValue": "statusId",
+          "CheckboxGroupItemLabel": "statusName"
         },
         "SingleColor": {
           "Name": "SingleColor",
           "DisplayName": "单选颜色",
-          "InputMethod": "SELECT",
+          "InputMethod": "RADIO_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "colorId",
-          "SelectItemText": "colorName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "row",
+          "RadioGroupItemValue": "colorId",
+          "RadioGroupItemLabel": "colorName",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "MultiColor": {
           "Name": "MultiColor",
           "DisplayName": "多选颜色",
-          "InputMethod": "SELECT",
+          "InputMethod": "CHECKBOX_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "colorId",
-          "SelectItemText": "colorName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "row",
+          "CheckboxGroupItemValue": "colorId",
+          "CheckboxGroupItemLabel": "colorName"
         },
         "SingleCategory": {
           "Name": "SingleCategory",
           "DisplayName": "单选分类",
-          "InputMethod": "SELECT",
+          "InputMethod": "RADIO_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "categoryId",
-          "SelectItemText": "categoryName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "row",
+          "RadioGroupItemValue": "categoryId",
+          "RadioGroupItemLabel": "categoryName",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "MultiCategory": {
           "Name": "MultiCategory",
           "DisplayName": "多选分类",
-          "InputMethod": "SELECT",
+          "InputMethod": "CHECKBOX_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "categoryId",
-          "SelectItemText": "categoryName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "row",
+          "CheckboxGroupItemValue": "categoryId",
+          "CheckboxGroupItemLabel": "categoryName"
         },
         "SinglePattern": {
           "Name": "SinglePattern",
           "DisplayName": "单选形态",
-          "InputMethod": "SELECT",
+          "InputMethod": "RADIO_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "patternId",
-          "SelectItemText": "patternName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "row",
+          "RadioGroupItemValue": "patternId",
+          "RadioGroupItemLabel": "patternName",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "MultiPattern": {
           "Name": "MultiPattern",
           "DisplayName": "多选形态",
-          "InputMethod": "SELECT",
+          "InputMethod": "CHECKBOX_GROUP",
           "WithRules": false,
           "Required": false,
           "TextMaxLength": null,
-          "SelectItemValue": "patternId",
-          "SelectItemText": "patternName"
+          "SelectItemValue": "",
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "row",
+          "CheckboxGroupItemValue": "patternId",
+          "CheckboxGroupItemLabel": "patternName"
         },
         "DataStatus": {
           "Name": "DataStatus",
@@ -1052,7 +1130,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
@@ -1062,7 +1146,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
@@ -1072,7 +1162,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         }
       }
     },
@@ -1088,7 +1184,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "DataStatus": {
           "Name": "DataStatus",
@@ -1098,7 +1200,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
@@ -1108,7 +1216,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
@@ -1118,7 +1232,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         }
       }
     },
@@ -1134,7 +1254,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "CategoryName": {
           "Name": "CategoryName",
@@ -1144,7 +1270,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "DataStatus": {
           "Name": "DataStatus",
@@ -1154,7 +1286,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
@@ -1164,7 +1302,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
@@ -1174,7 +1318,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         }
       }
     },
@@ -1190,7 +1340,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "PatternName": {
           "Name": "PatternName",
@@ -1200,7 +1356,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "DataStatus": {
           "Name": "DataStatus",
@@ -1210,7 +1372,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "CreateTime": {
           "Name": "CreateTime",
@@ -1220,7 +1388,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         },
         "LastUpdateTime": {
           "Name": "LastUpdateTime",
@@ -1230,7 +1404,13 @@
           "Required": false,
           "TextMaxLength": null,
           "SelectItemValue": "",
-          "SelectItemText": ""
+          "SelectItemText": "",
+          "RadioGroupDirection": "",
+          "RadioGroupItemValue": "",
+          "RadioGroupItemLabel": "",
+          "CheckboxGroupDirection": "",
+          "CheckboxGroupItemValue": "",
+          "CheckboxGroupItemLabel": ""
         }
       }
     }

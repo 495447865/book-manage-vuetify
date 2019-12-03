@@ -31,6 +31,10 @@
                 this.appService.tag_empty({}).then(this.tag_empty_callback)
             },
             tag_empty_callback: function (response) {
+                var responseData = response.data;
+                if (responseData.status != 1) {
+                    return;
+                }
             },
         },
     }

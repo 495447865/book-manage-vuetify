@@ -43,7 +43,9 @@ src\App.vue
 src\registerServiceWorker.js
 src\assets\logo.png
 src\assets\logo.svg
+src\plugins\VCheckboxGroup.vue
 src\plugins\vuetify.js
 src\router\index.js
+src\styles\vuetify-extended.css
 src\views\About.vue
 src\views\Home.vue

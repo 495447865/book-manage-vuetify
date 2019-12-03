@@ -33,6 +33,10 @@
                 this.appService.category_empty({}).then(this.category_empty_callback)
             },
             category_empty_callback: function (response) {
+                var responseData = response.data;
+                if (responseData.status != 1) {
+                    return;
+                }
             },
         },
     }

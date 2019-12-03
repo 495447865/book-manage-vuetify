@@ -1,0 +1,4 @@
+﻿.v-checkbox-group[row] .v-input--checkbox {
+    display: inline-block;
+    margin-right: 16px;
+}

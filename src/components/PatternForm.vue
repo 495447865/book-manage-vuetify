@@ -33,6 +33,10 @@
                 this.appService.pattern_empty({}).then(this.pattern_empty_callback)
             },
             pattern_empty_callback: function (response) {
+                var responseData = response.data;
+                if (responseData.status != 1) {
+                    return;
+                }
             },
         },
     }
