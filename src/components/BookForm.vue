@@ -3,36 +3,16 @@
         <v-text-field v-model="item.name" label="书名"></v-text-field>
         <v-text-field v-model="item.price" label="定价"></v-text-field>
         <v-text-field v-model="item.brief" label="简介"></v-text-field>
-        <v-radio-group v-model="item.singleTag" row>
-            <v-radio v-for="v in option.singleTag" :key="v.id" :value="v.id" :label="v.tagName"></v-radio>
-        </v-radio-group>
-        <v-checkbox-group row>
-            <v-checkbox v-for="v in option.multiTag" :key="v.id" v-model="item.multiTag" :value="v.id" :label="v.tagName"></v-checkbox>
-        </v-checkbox-group>
-        <v-radio-group v-model="item.singleStatus" row>
-            <v-radio v-for="v in option.singleStatus" :key="v.statusId" :value="v.statusId" :label="v.statusName"></v-radio>
-        </v-radio-group>
-        <v-checkbox-group row>
-            <v-checkbox v-for="v in option.multiStatus" :key="v.statusId" v-model="item.multiStatus" :value="v.statusId" :label="v.statusName"></v-checkbox>
-        </v-checkbox-group>
-        <v-radio-group v-model="item.singleColor" row>
-            <v-radio v-for="v in option.singleColor" :key="v.colorId" :value="v.colorId" :label="v.colorName"></v-radio>
-        </v-radio-group>
-        <v-checkbox-group row>
-            <v-checkbox v-for="v in option.multiColor" :key="v.colorId" v-model="item.multiColor" :value="v.colorId" :label="v.colorName"></v-checkbox>
-        </v-checkbox-group>
-        <v-radio-group v-model="item.singleCategory" row>
-            <v-radio v-for="v in option.singleCategory" :key="v.categoryId" :value="v.categoryId" :label="v.categoryName"></v-radio>
-        </v-radio-group>
-        <v-checkbox-group row>
-            <v-checkbox v-for="v in option.multiCategory" :key="v.categoryId" v-model="item.multiCategory" :value="v.categoryId" :label="v.categoryName"></v-checkbox>
-        </v-checkbox-group>
-        <v-radio-group v-model="item.singlePattern" row>
-            <v-radio v-for="v in option.singlePattern" :key="v.patternId" :value="v.patternId" :label="v.patternName"></v-radio>
-        </v-radio-group>
-        <v-checkbox-group row>
-            <v-checkbox v-for="v in option.multiPattern" :key="v.patternId" v-model="item.multiPattern" :value="v.patternId" :label="v.patternName"></v-checkbox>
-        </v-checkbox-group>
+        <v-select v-model="item.singleTag" :items="option.singleTag" label="单选标签" item-value="id" item-text="tagName" required></v-select>
+        <v-select v-model="item.multiTag" :items="option.multiTag" label="多选标签" :multiple="true" item-value="id" item-text="tagName" required></v-select>
+        <v-select v-model="item.singleStatus" :items="option.singleStatus" label="单选状态" item-value="statusId" item-text="statusName" required></v-select>
+        <v-select v-model="item.multiStatus" :items="option.multiStatus" label="多选状态" :multiple="true" item-value="statusId" item-text="statusName" required></v-select>
+        <v-select v-model="item.singleColor" :items="option.singleColor" label="单选颜色" item-value="colorId" item-text="colorName" required></v-select>
+        <v-select v-model="item.multiColor" :items="option.multiColor" label="多选颜色" :multiple="true" item-value="colorId" item-text="colorName" required></v-select>
+        <v-select v-model="item.singleCategory" :items="option.singleCategory" label="单选分类" item-value="categoryId" item-text="categoryName" required></v-select>
+        <v-select v-model="item.multiCategory" :items="option.multiCategory" label="多选分类" :multiple="true" item-value="categoryId" item-text="categoryName" required></v-select>
+        <v-select v-model="item.singlePattern" :items="option.singlePattern" label="单选形态" item-value="patternId" item-text="patternName" required></v-select>
+        <v-select v-model="item.multiPattern" :items="option.multiPattern" label="多选形态" :multiple="true" item-value="patternId" item-text="patternName" required></v-select>
         <v-text-field v-model="item.dataStatus" label="状态"></v-text-field>
         <v-text-field v-model="item.createTime" label="创建时间"></v-text-field>
         <v-text-field v-model="item.lastUpdateTime" label="最后更新时间"></v-text-field>
@@ -48,15 +28,15 @@
                 name: null,
                 price: null,
                 brief: null,
-                singleTag: null,
+                singleTag: [],
                 multiTag: [],
-                singleStatus: null,
+                singleStatus: [],
                 multiStatus: [],
-                singleColor: null,
+                singleColor: [],
                 multiColor: [],
-                singleCategory: null,
+                singleCategory: [],
                 multiCategory: [],
-                singlePattern: null,
+                singlePattern: [],
                 multiPattern: [],
                 dataStatus: null,
                 createTime: null,
@@ -64,10 +44,15 @@
             },
             option: {
                 singleTag: [],
+                multiTag: [],
                 singleStatus: [],
+                multiStatus: [],
                 singleColor: [],
+                multiColor: [],
                 singleCategory: [],
+                multiCategory: [],
                 singlePattern: [],
+                multiPattern: [],
             },
             rule: {
             },
