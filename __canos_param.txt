@@ -972,7 +972,7 @@
           "SelectItemValue": "id",
           "SelectItemText": "tagName",
           "SelectMultiple": {
-            "Value": ""
+            "Value": "false"
           },
           "RadioGroupDirection": "",
           "RadioGroupItemValue": "",
@@ -1004,7 +1004,7 @@
           "SelectItemValue": "statusId",
           "SelectItemText": "statusName",
           "SelectMultiple": {
-            "Value": ""
+            "Value": "false"
           },
           "RadioGroupDirection": "",
           "RadioGroupItemValue": "",
@@ -1036,7 +1036,7 @@
           "SelectItemValue": "colorId",
           "SelectItemText": "colorName",
           "SelectMultiple": {
-            "Value": ""
+            "Value": "false"
           },
           "RadioGroupDirection": "",
           "RadioGroupItemValue": "",
@@ -1068,7 +1068,7 @@
           "SelectItemValue": "categoryId",
           "SelectItemText": "categoryName",
           "SelectMultiple": {
-            "Value": ""
+            "Value": "false"
           },
           "RadioGroupDirection": "",
           "RadioGroupItemValue": "",
@@ -1100,7 +1100,7 @@
           "SelectItemValue": "patternId",
           "SelectItemText": "patternName",
           "SelectMultiple": {
-            "Value": ""
+            "Value": "false"
           },
           "RadioGroupDirection": "",
           "RadioGroupItemValue": "",
