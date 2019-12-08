@@ -1,5 +1,5 @@
 ﻿<template>
-    <v-app-bar color="deep-purple accent-4" dark>
+    <v-app-bar dark>
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
         <v-toolbar-title>站点标题</v-toolbar-title>

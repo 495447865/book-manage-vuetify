@@ -1,6 +1,5 @@
 ﻿<template>
-    <v-app>
-
+    <div>
         <main-header></main-header>
 
         <main-toolbar></main-toolbar>
@@ -12,7 +11,7 @@
         <!--<v-content>
             <welcome></welcome>
         </v-content>-->
-    </v-app>
+    </div>
 </template>
 
 
