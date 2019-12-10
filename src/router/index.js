@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Welcome from '../pages/Welcome.vue'
 import _404 from '../pages/_404.vue'
 
+import BookListPage from '../pages/BookListPage.vue'
+import BookCreatePage from '../pages/BookCreatePage.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -10,6 +13,16 @@ const routes = [
         path: '/',
         name: 'welcome',
         component: Welcome
+    },
+    {
+        path: '/book',
+        name: 'book-list-page',
+        component: BookListPage
+    },
+    {
+        path: '/book/create',
+        name: 'book-create-page',
+        component: BookCreatePage
     },
     {
         path: '/_404',
