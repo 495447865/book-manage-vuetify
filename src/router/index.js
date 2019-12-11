@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Welcome from '../pages/Welcome.vue'
-import _404 from '../pages/_404.vue'
 
+import WelcomePage from '../pages/WelcomePage.vue'
 import BookListPage from '../pages/BookListPage.vue'
 import BookCreatePage from '../pages/BookCreatePage.vue'
+import _404 from '../pages/_404.vue'
 
 Vue.use(VueRouter)
 
@@ -12,27 +12,27 @@ const routes = [
     {
         path: '/',
         name: 'welcome',
-        component: Welcome
+        component: WelcomePage,
     },
     {
         path: '/book',
         name: 'book-list-page',
-        component: BookListPage
+        component: BookListPage,
     },
     {
         path: '/book/create',
         name: 'book-create-page',
-        component: BookCreatePage
+        component: BookCreatePage,
     },
     {
         path: '/_404',
         name: '_404',
-        component: _404
+        component: _404,
     },
     {
-        path: "*",
-        redirect: "/_404"
-    }
+        path: '*',
+        redirect: '/_404',
+    },
 ]
 
 const router = new VueRouter({

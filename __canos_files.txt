@@ -3,6 +3,7 @@ package-lock.json
 public\index.html
 src\main.js
 src\service.js
+src\router\index.js
 src\components\BookSimpleTable.vue
 src\components\BookDataTable.vue
 src\components\BookForm.vue
@@ -43,9 +44,5 @@ src\App.vue
 src\registerServiceWorker.js
 src\assets\logo.png
 src\assets\logo.svg
-src\plugins\VCheckboxGroup.vue
 src\plugins\vuetify.js
-src\router\index.js
 src\styles\vuetify-extended.css
-src\views\About.vue
-src\views\Home.vue
