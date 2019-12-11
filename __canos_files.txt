@@ -2,8 +2,9 @@ package.json
 package-lock.json
 public\index.html
 src\main.js
-src\service.js
 src\router\index.js
+src\App.vue
+src\service.js
 src\components\BookSimpleTable.vue
 src\components\BookDataTable.vue
 src\components\BookForm.vue
@@ -40,7 +41,6 @@ public\img\icons\favicon-32x32.png
 public\img\icons\msapplication-icon-144x144.png
 public\img\icons\mstile-150x150.png
 public\img\icons\safari-pinned-tab.svg
-src\App.vue
 src\registerServiceWorker.js
 src\assets\logo.png
 src\assets\logo.svg
