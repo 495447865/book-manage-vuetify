@@ -1,7 +1,7 @@
 <template>
     <v-app>
 
-        <main-menu :drawer.sync="drawer"></main-menu>
+        <main-menu :drawer="drawer"></main-menu>
 
         <main-header :drawer.sync="drawer"></main-header>
 
