@@ -1,16 +1,12 @@
 <template>
     <v-app>
-
         <main-menu :drawer="drawer"></main-menu>
-
         <main-header :drawer.sync="drawer"></main-header>
-
         <v-content>
             <v-container fluid>
                 <router-view />
             </v-container>
         </v-content>
-
     </v-app>
 </template>
 

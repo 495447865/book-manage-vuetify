@@ -1,4 +1,4 @@
-﻿<template>
+<template>
     <v-navigation-drawer :value="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app>
         <v-list dense>
             <template v-for="item in items">

@@ -6,6 +6,7 @@ src\router\index.js
 src\App.vue
 src\service.js
 src\components\MainHeader.vue
+src\components\MainMenu.vue
 src\components\BookSimpleTable.vue
 src\components\BookDataTable.vue
 src\components\BookForm.vue
