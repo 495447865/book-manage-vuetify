@@ -664,5 +664,114 @@
     }
   ],
   "EnvironmentVariableEntityList": [],
-  "PackageReferenceEntityList": []
+  "PackageReferenceEntityList": [],
+  "PageEntityList": [
+    {
+      "Id": 1,
+      "ProjectName": "BookManage",
+      "Name": "WelcomePage",
+      "Content": "{}",
+      "Remark": "欢迎页",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:37:59",
+      "LastUpdateTime": "2019-12-14T20:37:59"
+    },
+    {
+      "Id": 2,
+      "ProjectName": "BookManage",
+      "Name": "_404",
+      "Content": "{}",
+      "Remark": "404页面",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:38:27",
+      "LastUpdateTime": "2019-12-14T20:38:27"
+    },
+    {
+      "Id": 3,
+      "ProjectName": "BookManage",
+      "Name": "BookListPage",
+      "Content": "{}",
+      "Remark": "图书列表页",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:38:54",
+      "LastUpdateTime": "2019-12-14T20:38:54"
+    },
+    {
+      "Id": 4,
+      "ProjectName": "BookManage",
+      "Name": "BookCreatePage",
+      "Content": "{}",
+      "Remark": "新建图书页",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:39:09",
+      "LastUpdateTime": "2019-12-14T20:39:09"
+    }
+  ],
+  "RouteEntityList": [
+    {
+      "Id": 1,
+      "ProjectName": "BookManage",
+      "Path": "/",
+      "Name": "welcome",
+      "Page": 1,
+      "Redirect": 0,
+      "Remark": "根路径",
+      "Position": 0,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:40:53",
+      "LastUpdateTime": "2019-12-14T20:40:53"
+    },
+    {
+      "Id": 2,
+      "ProjectName": "BookManage",
+      "Path": "/book",
+      "Name": "book-list-page",
+      "Page": 3,
+      "Redirect": 0,
+      "Remark": "图书列表页",
+      "Position": 1,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:41:18",
+      "LastUpdateTime": "2019-12-14T20:41:18"
+    },
+    {
+      "Id": 3,
+      "ProjectName": "BookManage",
+      "Path": "/book/create",
+      "Name": "book-create-page",
+      "Page": 4,
+      "Redirect": 0,
+      "Remark": "新建图书页",
+      "Position": 2,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:41:50",
+      "LastUpdateTime": "2019-12-14T20:44:13"
+    },
+    {
+      "Id": 4,
+      "ProjectName": "BookManage",
+      "Path": "/_404",
+      "Name": "_404",
+      "Page": 2,
+      "Redirect": 0,
+      "Remark": "404页面",
+      "Position": 3,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:43:17",
+      "LastUpdateTime": "2019-12-14T20:43:17"
+    },
+    {
+      "Id": 5,
+      "ProjectName": "BookManage",
+      "Path": "*",
+      "Name": "other",
+      "Page": 0,
+      "Redirect": 4,
+      "Remark": "未匹配的路由",
+      "Position": 4,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-14T20:43:54",
+      "LastUpdateTime": "2019-12-14T20:43:54"
+    }
+  ]
 }

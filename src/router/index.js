@@ -31,6 +31,7 @@ const routes = [
     },
     {
         path: '*',
+        name: 'other',
         redirect: '/_404',
     },
 ]

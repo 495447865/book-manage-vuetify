@@ -1,6 +1,6 @@
 {
   "Version": "1.0.0",
-  "ReleaseNo": "2019112401",
+  "ReleaseNo": "20191124017",
   "FileVersion": "1.0.0",
   "AssemblyVersion": "1.0.0",
   "Project": {
@@ -1413,6 +1413,59 @@
           "RadioGroupItemLabel": ""
         }
       }
+    }
+  },
+  "PageMap": {
+    "WelcomePage": null,
+    "_404": null,
+    "BookListPage": null,
+    "BookCreatePage": null
+  },
+  "RouteMap": {
+    "welcome": {
+      "RedirectRouteId": 0,
+      "PageId": 1,
+      "Path": "/",
+      "Name": "welcome",
+      "Component": "WelcomePage",
+      "LazyLoad": false,
+      "Redirect": ""
+    },
+    "book-list-page": {
+      "RedirectRouteId": 0,
+      "PageId": 3,
+      "Path": "/book",
+      "Name": "book-list-page",
+      "Component": "BookListPage",
+      "LazyLoad": false,
+      "Redirect": ""
+    },
+    "book-create-page": {
+      "RedirectRouteId": 0,
+      "PageId": 4,
+      "Path": "/book/create",
+      "Name": "book-create-page",
+      "Component": "BookCreatePage",
+      "LazyLoad": false,
+      "Redirect": ""
+    },
+    "_404": {
+      "RedirectRouteId": 0,
+      "PageId": 2,
+      "Path": "/_404",
+      "Name": "_404",
+      "Component": "_404",
+      "LazyLoad": false,
+      "Redirect": ""
+    },
+    "other": {
+      "RedirectRouteId": 4,
+      "PageId": 0,
+      "Path": "*",
+      "Name": "other",
+      "Component": "",
+      "LazyLoad": false,
+      "Redirect": "/_404"
     }
   }
 }
