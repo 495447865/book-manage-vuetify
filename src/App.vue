@@ -1,15 +1,16 @@
 <template>
     <v-app>
 
-        <main-menu></main-menu>
+        <main-menu :drawer.sync="drawer"></main-menu>
 
-        <main-header></main-header>
+        <main-header :drawer.sync="drawer"></main-header>
 
         <v-content>
             <v-container fluid>
                 <router-view />
             </v-container>
         </v-content>
+
     </v-app>
 </template>
 
@@ -22,12 +23,8 @@
             'main-menu': MainMenu,
             'main-header': MainHeader
         },
-        props: {
-            source: String,
-        },
         data: () => ({
-            dialog: false,
-            drawer: null,
+            drawer: true,
         }),
     };
 </script>

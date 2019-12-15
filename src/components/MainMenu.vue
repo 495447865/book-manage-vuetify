@@ -1,5 +1,5 @@
 ﻿<template>
-    <v-navigation-drawer v-model="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app>
+    <v-navigation-drawer :value="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app>
         <v-list dense>
             <template v-for="item in items">
                 <v-list-group v-if="item.children" :key="item.text" v-model="item.model" :prepend-icon="item.model ? item.icon : item['icon-alt']" append-icon="">
@@ -36,6 +36,9 @@
 
 <script>
     export default {
+        props: {
+            drawer: null,
+        },
         data: () => ({
             items: [
                 { icon: 'mdi-apps', text: 'Contacts', heading: true },
