@@ -1415,13 +1415,85 @@
       }
     }
   },
-  "PageMap": {
-    "WelcomePage": null,
-    "_404": null,
-    "BookListPage": null,
-    "BookCreatePage": null
+  "VuePageMap": {
+    "WelcomePage": {
+      "HtmlTag": {
+        "Component": {
+          "Name": "div",
+          "HtmlComponent": true,
+          "PropertyMap": {}
+        },
+        "Children": []
+      }
+    },
+    "_404": {
+      "HtmlTag": {
+        "Component": {
+          "Name": "div",
+          "HtmlComponent": true,
+          "PropertyMap": {}
+        },
+        "Children": []
+      }
+    },
+    "BookListPage": {
+      "HtmlTag": {
+        "Component": {
+          "Name": "v-row",
+          "HtmlComponent": true,
+          "PropertyMap": {}
+        },
+        "Children": [
+          {
+            "Component": {
+              "Name": "v-col",
+              "HtmlComponent": true,
+              "PropertyMap": {}
+            },
+            "Children": [
+              {
+                "Component": {
+                  "Name": "BookDataTable",
+                  "HtmlComponent": false,
+                  "PropertyMap": {}
+                },
+                "Children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "BookCreatePage": {
+      "HtmlTag": {
+        "Component": {
+          "Name": "v-row",
+          "HtmlComponent": true,
+          "PropertyMap": {}
+        },
+        "Children": [
+          {
+            "Component": {
+              "Name": "v-col",
+              "HtmlComponent": true,
+              "PropertyMap": {}
+            },
+            "Children": [
+              {
+                "Component": {
+                  "Name": "BookForm",
+                  "HtmlComponent": false,
+                  "PropertyMap": {}
+                },
+                "Children": []
+              }
+            ]
+          }
+        ]
+      }
+    }
   },
-  "RouteMap": {
+  "VueRouteMap": {
     "welcome": {
       "RedirectRouteId": 0,
       "PageId": 1,

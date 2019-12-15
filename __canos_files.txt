@@ -5,6 +5,7 @@ src\main.js
 src\router\index.js
 src\App.vue
 src\service.js
+src\components\MainHeader.vue
 src\components\BookSimpleTable.vue
 src\components\BookDataTable.vue
 src\components\BookForm.vue
@@ -17,6 +18,10 @@ src\components\CategoryForm.vue
 src\components\PatternSimpleTable.vue
 src\components\PatternDataTable.vue
 src\components\PatternForm.vue
+src\pages\WelcomePage.vue
+src\pages\_404.vue
+src\pages\BookListPage.vue
+src\pages\BookCreatePage.vue
 scripts_mysql.sql
 
 .browserslistrc

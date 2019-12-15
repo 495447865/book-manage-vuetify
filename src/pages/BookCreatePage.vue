@@ -1,11 +1,17 @@
-﻿<template>
-    <div>
-        <p>book create page</p>
-    </div>
+<template>
+    <v-row>
+        <v-col>
+            <book-form></book-form>
+        </v-col>
+    </v-row>
 </template>
 
 <script>
-    export default {
+    import BookForm from '@/components/BookForm';
 
-    };
+    export default {
+        components: {
+            'book-form': BookForm,
+        },
+    }
 </script>

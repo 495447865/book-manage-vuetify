@@ -1,4 +1,4 @@
-﻿<template>
+<template>
     <v-app-bar dark>
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
 

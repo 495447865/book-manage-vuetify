@@ -1,10 +1,9 @@
-﻿<template>
-    <div>
-        <p>404</p>
-    </div>
+<template>
+    <div></div>
 </template>
 
 <script>
+
     export default {
-    };
+    }
 </script>
