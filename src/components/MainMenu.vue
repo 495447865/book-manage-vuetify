@@ -42,42 +42,36 @@
 </script>
 
 <style>
-    /*.theme--light.v-list-item--active:hover::before,
-    .theme--light.v-list-item--active::before {
-        opacity: 0;
-    }*/
-
-    /*.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+    .theme--light.v-list-item.v-list-item--active {
         color: rgba(0, 0, 0, 0.87) !important;
-    }*/
+    }
 
-    /*.theme--light.v-list-item.v-list-item--active {
-        color: rgba(0, 0, 0, 0.87) !important;
-    }*/
+        .theme--light.v-list-item.v-list-item--active .v-icon {
+            color: rgba(0, 0, 0, 0.54) !important;
+        }
 
-    /*.v-list-item-group .v-list-item--active {
-        color: inherit;
-    }*/
-
-    .v-list-item--link:before {
+    .theme--light.v-list-item--link:before {
         background-color: inherit !important;
     }
 
-    .v-list-item--link:hover:before {
+    .theme--light.v-list-item--link:hover:before {
         background-color: currentColor !important;
     }
 
-    .router-link-exact-active {
-        color: rgba(0, 0, 0, 0.87) !important;
+
+
+
+
+    .theme--light.router-link-exact-active {
+        color: inherit !important;
     }
 
-        .router-link-exact-active:before {
+        .theme--light.router-link-exact-active:before {
             background-color: currentColor !important;
             color: rgba(0, 0, 0, 0.87) !important;
         }
 
-    /*.router-link-exact-active:hover:before {
-            background-color: transparent !important;
+        .theme--light.router-link-exact-active .v-icon {
             color: rgba(0, 0, 0, 0.87) !important;
-        }*/
+        }
 </style>
