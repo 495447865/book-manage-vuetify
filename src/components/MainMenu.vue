@@ -3,7 +3,7 @@
         <v-list dense>
             <v-list-item-group>
                 <div v-for="(item, i) in items" :key="i">
-                    <v-list-item :to="{name: item.route}">
+                    <v-list-item :to="{name: item.route}" exact-active-class="router-link-exact-active">
                         <v-list-item-icon class="mr-4">
                             <v-icon v-text="item.icon"></v-icon>
                         </v-list-item-icon>
@@ -11,7 +11,7 @@
                             <v-list-item-title>{{ item.text }}</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
-                    <v-list-item :to="{name: item.route}" v-for="(child, j) in item.children" :key="j">
+                    <v-list-item :to="{name: child.route}" exact-active-class="router-link-exact-active" v-for="(child, j) in item.children" :key="j">
                         <v-list-item-icon class="mr-4">
                             <v-icon>{{ child.icon }}</v-icon>
                         </v-list-item-icon>
@@ -32,18 +32,43 @@
         },
         data: () => ({
             items: [
-                { icon: 'mdi-apps', text: '图书列表页' },
-                { icon: 'mdi-apps', text: '新增图书页' },
-                {
-                    icon: 'mdi-apps',
-                    text: '一级菜单',
-                    children: [
-                        { icon: 'mdi-apps', text: '二级菜单1' },
-                        { icon: 'mdi-apps', text: '二级菜单2' },
-                    ]
-                },
+                { icon: 'mdi-home', text: '首页', route: 'welcome' },
+                { icon: 'mdi-apps', text: '图书列表页', route: 'book-list-page' },
+                { icon: 'mdi-apps', text: '新增图书页', route: 'book-create-page' },
+
             ],
         })
     }
 </script>
 
+<style>
+    /*.theme--light.v-list-item--active:hover::before,
+    .theme--light.v-list-item--active::before {
+        opacity: 0;
+    }*/
+
+    /*.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+        color: rgba(0, 0, 0, 0.87) !important;
+    }*/
+
+    /*.theme--light.v-list-item.v-list-item--active {
+        color: rgba(0, 0, 0, 0.87) !important;
+    }*/
+
+    /*.v-list-item-group .v-list-item--active {
+        color: inherit;
+    }*/
+
+    .v-list-item--link:before {
+        background-color: inherit !important;
+    }
+
+    .router-link-exact-active {
+        color: rgba(0, 0, 0, 0.87) !important;
+    }
+
+        .router-link-exact-active:before {
+            background-color: currentColor !important;
+            color: rgba(0, 0, 0, 0.87) !important;
+        }
+</style>
