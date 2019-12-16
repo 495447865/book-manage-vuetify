@@ -63,6 +63,10 @@
         background-color: inherit !important;
     }
 
+    .v-list-item--link:hover:before {
+        background-color: currentColor !important;
+    }
+
     .router-link-exact-active {
         color: rgba(0, 0, 0, 0.87) !important;
     }
@@ -71,4 +75,9 @@
             background-color: currentColor !important;
             color: rgba(0, 0, 0, 0.87) !important;
         }
+
+    /*.router-link-exact-active:hover:before {
+            background-color: transparent !important;
+            color: rgba(0, 0, 0, 0.87) !important;
+        }*/
 </style>
