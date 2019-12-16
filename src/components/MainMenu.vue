@@ -50,17 +50,13 @@
             color: rgba(0, 0, 0, 0.54) !important;
         }
 
-    .theme--light.v-list-item--link:before {
+    .theme--light.v-list-item:before {
         background-color: inherit !important;
     }
 
-    .theme--light.v-list-item--link:hover:before {
+    .theme--light.v-list-item:hover:before {
         background-color: currentColor !important;
     }
-
-
-
-
 
     .theme--light.router-link-exact-active {
         color: inherit !important;
