@@ -1,35 +1,26 @@
 <template>
     <v-navigation-drawer :value="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app>
         <v-list dense>
-            <template v-for="item in items">
-                <v-list-group v-if="item.children" :key="item.text" v-model="item.model" :prepend-icon="item.model ? item.icon : item['icon-alt']" append-icon="">
-                    <template v-slot:activator>
-                        <v-list-item>
-                            <v-list-item-content>
-                                <v-list-item-title>{{ item.text }}</v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
-                    </template>
-                    <v-list-item v-for="(child, i) in item.children" :key="i" link>
-                        <v-list-item-action v-if="child.icon">
-                            <v-icon>{{ child.icon }}</v-icon>
-                        </v-list-item-action>
+            <v-list-item-group>
+                <div v-for="(item, i) in items" :key="i">
+                    <v-list-item :to="{name: item.route}">
+                        <v-list-item-icon class="mr-4">
+                            <v-icon v-text="item.icon"></v-icon>
+                        </v-list-item-icon>
                         <v-list-item-content>
+                            <v-list-item-title>{{ item.text }}</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                    <v-list-item :to="{name: item.route}" v-for="(child, j) in item.children" :key="j">
+                        <v-list-item-icon class="mr-4">
+                            <v-icon>{{ child.icon }}</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content class="ml-4">
                             <v-list-item-title>{{ child.text }}</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
-                </v-list-group>
-                <v-list-item v-else :key="item.text" link>
-                    <v-list-item-action>
-                        <v-icon>{{ item.icon }}</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>
-                            {{ item.text }}
-                        </v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
-            </template>
+                </div>
+            </v-list-item-group>
         </v-list>
     </v-navigation-drawer>
 </template>
@@ -41,37 +32,18 @@
         },
         data: () => ({
             items: [
-                { icon: 'mdi-apps', text: 'Contacts', heading: true },
-                { icon: 'mdi-apps', text: 'Frequently contacted' },
-                { icon: 'mdi-apps', text: 'Duplicates' },
+                { icon: 'mdi-apps', text: '图书列表页' },
+                { icon: 'mdi-apps', text: '新增图书页' },
                 {
-                    icon: 'mdi-chevron-up',
-                    'icon-alt': 'mdi-chevron-down',
-                    text: 'Labels',
-                    model: true,
+                    icon: 'mdi-apps',
+                    text: '一级菜单',
                     children: [
-                        { icon: 'mdi-apps', text: 'Create label' },
-                    ],
+                        { icon: 'mdi-apps', text: '二级菜单1' },
+                        { icon: 'mdi-apps', text: '二级菜单2' },
+                    ]
                 },
-                {
-                    icon: 'mdi-chevron-up',
-                    'icon-alt': 'mdi-chevron-down',
-                    text: 'More',
-                    model: false,
-                    children: [
-                        { icon: 'mdi-apps', text: 'Import' },
-                        { icon: 'mdi-apps', text: 'Export' },
-                        { icon: 'mdi-apps', text: 'Print' },
-                        { icon: 'mdi-apps', text: 'Undo changes' },
-                        { icon: 'mdi-apps', text: 'Other contacts' },
-                    ],
-                },
-                { icon: 'mdi-apps', text: 'Settings' },
-                { icon: 'mdi-apps', text: 'Send feedback' },
-                { icon: 'mdi-apps', text: 'Help' },
-                { icon: 'mdi-apps', text: 'App downloads' },
-                { icon: 'mdi-apps', text: 'Go to the old version' },
             ],
         })
     }
 </script>
+

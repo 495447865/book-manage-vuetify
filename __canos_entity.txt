@@ -773,5 +773,72 @@
       "CreateTime": "2019-12-14T20:43:54",
       "LastUpdateTime": "2019-12-14T20:43:54"
     }
+  ],
+  "MenuItemEntityList": [
+    {
+      "Id": 1,
+      "ProjectName": "BookManage",
+      "Name": "BookListRoute",
+      "Icon": "mdi-apps",
+      "Text": "图书列表页",
+      "RouteId": 2,
+      "ParentId": 0,
+      "Position": 0,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-16T07:44:10",
+      "LastUpdateTime": "2019-12-16T07:44:10"
+    },
+    {
+      "Id": 2,
+      "ProjectName": "BookManage",
+      "Name": "BookCreateRoute",
+      "Icon": "mdi-apps",
+      "Text": "新增图书页",
+      "RouteId": 3,
+      "ParentId": 0,
+      "Position": 1,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-16T07:44:35",
+      "LastUpdateTime": "2019-12-16T07:44:42"
+    },
+    {
+      "Id": 3,
+      "ProjectName": "BookManage",
+      "Name": "LevelOne",
+      "Icon": "mdi-apps",
+      "Text": "一级菜单",
+      "RouteId": 0,
+      "ParentId": 0,
+      "Position": 2,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-16T07:49:10",
+      "LastUpdateTime": "2019-12-16T07:49:10"
+    },
+    {
+      "Id": 4,
+      "ProjectName": "BookManage",
+      "Name": "LevelTwoFirst",
+      "Icon": "mdi-apps",
+      "Text": "二级菜单1",
+      "RouteId": 0,
+      "ParentId": 3,
+      "Position": 3,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-16T07:53:40",
+      "LastUpdateTime": "2019-12-16T07:54:03"
+    },
+    {
+      "Id": 5,
+      "ProjectName": "BookManage",
+      "Name": "LevelTwoSecond",
+      "Icon": "mdi-apps",
+      "Text": "二级菜单2",
+      "RouteId": 0,
+      "ParentId": 3,
+      "Position": 4,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-16T07:53:57",
+      "LastUpdateTime": "2019-12-16T07:53:57"
+    }
   ]
 }
