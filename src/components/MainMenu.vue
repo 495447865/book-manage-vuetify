@@ -35,7 +35,6 @@
                 { icon: 'mdi-home', text: '首页', route: 'welcome' },
                 { icon: 'mdi-apps', text: '图书列表页', route: 'book-list-page' },
                 { icon: 'mdi-apps', text: '新增图书页', route: 'book-create-page' },
-
             ],
         })
     }
@@ -71,3 +70,4 @@
             color: rgba(0, 0, 0, 0.87) !important;
         }
 </style>
+

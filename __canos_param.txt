@@ -1561,28 +1561,6 @@
       "Icon": "mdi-apps",
       "RouteName": "book-create-page",
       "Children": []
-    },
-    {
-      "Name": "LevelOne",
-      "Text": "一级菜单",
-      "Icon": "mdi-apps",
-      "RouteName": "book-list-page",
-      "Children": [
-        {
-          "Name": "LevelTwoFirst",
-          "Text": "二级菜单1",
-          "Icon": "mdi-apps",
-          "RouteName": "book-create-page",
-          "Children": []
-        },
-        {
-          "Name": "LevelTwoSecond",
-          "Text": "二级菜单2",
-          "Icon": "mdi-apps",
-          "RouteName": "book-create-page",
-          "Children": []
-        }
-      ]
     }
   ]
 }

@@ -813,45 +813,6 @@
       "DataStatus": 1,
       "CreateTime": "2019-12-16T07:44:35",
       "LastUpdateTime": "2019-12-17T00:08:06"
-    },
-    {
-      "Id": 3,
-      "ProjectName": "BookManage",
-      "Name": "LevelOne",
-      "Icon": "mdi-apps",
-      "Text": "一级菜单",
-      "RouteId": 2,
-      "ParentId": 0,
-      "Position": 3,
-      "DataStatus": 1,
-      "CreateTime": "2019-12-16T07:49:10",
-      "LastUpdateTime": "2019-12-16T23:38:53"
-    },
-    {
-      "Id": 4,
-      "ProjectName": "BookManage",
-      "Name": "LevelTwoFirst",
-      "Icon": "mdi-apps",
-      "Text": "二级菜单1",
-      "RouteId": 3,
-      "ParentId": 3,
-      "Position": 4,
-      "DataStatus": 1,
-      "CreateTime": "2019-12-16T07:53:40",
-      "LastUpdateTime": "2019-12-16T23:38:56"
-    },
-    {
-      "Id": 5,
-      "ProjectName": "BookManage",
-      "Name": "LevelTwoSecond",
-      "Icon": "mdi-apps",
-      "Text": "二级菜单2",
-      "RouteId": 3,
-      "ParentId": 3,
-      "Position": 5,
-      "DataStatus": 1,
-      "CreateTime": "2019-12-16T07:53:57",
-      "LastUpdateTime": "2019-12-16T23:39:07"
     }
   ]
 }
