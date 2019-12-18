@@ -23,6 +23,7 @@ src\pages\WelcomePage.vue
 src\pages\_404.vue
 src\pages\BookListPage.vue
 src\pages\BookCreatePage.vue
+src\pages\BookItemPage.vue
 scripts_mysql.sql
 
 .browserslistrc

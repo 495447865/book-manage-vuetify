@@ -670,6 +670,7 @@
       "Id": 1,
       "ProjectName": "BookManage",
       "Name": "WelcomePage",
+      "PageType": "standard",
       "Content": "{}",
       "Remark": "欢迎页",
       "DataStatus": 1,
@@ -680,6 +681,7 @@
       "Id": 2,
       "ProjectName": "BookManage",
       "Name": "_404",
+      "PageType": "standard",
       "Content": "{}",
       "Remark": "404页面",
       "DataStatus": 1,
@@ -690,6 +692,7 @@
       "Id": 3,
       "ProjectName": "BookManage",
       "Name": "BookListPage",
+      "PageType": "standard",
       "Content": "{\"rows\":[{\"cols\":[{\"tags\":[{\"name\":\"BookDataTable\"}]}]}]}",
       "Remark": "图书列表页",
       "DataStatus": 1,
@@ -700,11 +703,23 @@
       "Id": 4,
       "ProjectName": "BookManage",
       "Name": "BookCreatePage",
+      "PageType": "standard",
       "Content": "{\"rows\":[{\"cols\":[{\"tags\":[{\"name\":\"BookForm\"}]}]}]}",
       "Remark": "新建图书页",
       "DataStatus": 1,
       "CreateTime": "2019-12-14T20:39:09",
       "LastUpdateTime": "2019-12-14T20:39:09"
+    },
+    {
+      "Id": 5,
+      "ProjectName": "BookManage",
+      "Name": "BookItemPage",
+      "PageType": "tab",
+      "Content": null,
+      "Remark": "图书详情页",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-17T18:22:37",
+      "LastUpdateTime": "2019-12-17T18:22:37"
     }
   ],
   "RouteEntityList": [
@@ -748,6 +763,19 @@
       "LastUpdateTime": "2019-12-14T20:44:13"
     },
     {
+      "Id": 6,
+      "ProjectName": "BookManage",
+      "Path": "/book/1",
+      "Name": "book-item-page",
+      "Page": 5,
+      "Redirect": 0,
+      "Remark": "tab页，里面有多个子页面",
+      "Position": 3,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-17T20:26:14",
+      "LastUpdateTime": "2019-12-17T20:26:14"
+    },
+    {
       "Id": 4,
       "ProjectName": "BookManage",
       "Path": "/_404",
@@ -755,7 +783,7 @@
       "Page": 2,
       "Redirect": 0,
       "Remark": "404页面",
-      "Position": 3,
+      "Position": 4,
       "DataStatus": 1,
       "CreateTime": "2019-12-14T20:43:17",
       "LastUpdateTime": "2019-12-14T20:43:17"
@@ -768,7 +796,7 @@
       "Page": 0,
       "Redirect": 4,
       "Remark": "未匹配的路由",
-      "Position": 4,
+      "Position": 5,
       "DataStatus": 1,
       "CreateTime": "2019-12-14T20:43:54",
       "LastUpdateTime": "2019-12-14T20:43:54"
@@ -813,6 +841,85 @@
       "DataStatus": 1,
       "CreateTime": "2019-12-16T07:44:35",
       "LastUpdateTime": "2019-12-17T00:08:06"
+    }
+  ],
+  "PageTabEntityList": [
+    {
+      "Id": 1,
+      "ProjectName": "BookManage",
+      "PageName": "BookItemPage",
+      "Name": "Apple",
+      "Text": "基本信息",
+      "Component": 1,
+      "RoutePath": "p-apple",
+      "RouteName": "n-apple",
+      "Icon": null,
+      "Position": 0,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-17T19:18:04",
+      "LastUpdateTime": "2019-12-18T08:51:24"
+    },
+    {
+      "Id": 2,
+      "ProjectName": "BookManage",
+      "PageName": "BookItemPage",
+      "Name": "Banana",
+      "Text": "扩展信息",
+      "Component": 2,
+      "RoutePath": "p-banana",
+      "RouteName": "n-banana",
+      "Icon": null,
+      "Position": 1,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-17T19:19:11",
+      "LastUpdateTime": "2019-12-18T08:51:28"
+    },
+    {
+      "Id": 3,
+      "ProjectName": "BookManage",
+      "PageName": "BookItemPage",
+      "Name": "Candy",
+      "Text": "其他",
+      "Component": 3,
+      "RoutePath": "p-candy",
+      "RouteName": "n-candy",
+      "Icon": null,
+      "Position": 2,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-17T22:33:38",
+      "LastUpdateTime": "2019-12-18T08:51:34"
+    }
+  ],
+  "ComponentEntityList": [
+    {
+      "Id": 1,
+      "ProjectName": "BookManage",
+      "Name": "Apple",
+      "ComponentType": "html",
+      "Remark": "组件一",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-18T08:09:50",
+      "LastUpdateTime": "2019-12-18T08:09:50"
+    },
+    {
+      "Id": 2,
+      "ProjectName": "BookManage",
+      "Name": "Banana",
+      "ComponentType": "html",
+      "Remark": "组件二",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-18T08:10:05",
+      "LastUpdateTime": "2019-12-18T08:10:05"
+    },
+    {
+      "Id": 3,
+      "ProjectName": "BookManage",
+      "Name": "BookDataTable",
+      "ComponentType": "subject",
+      "Remark": "组件三",
+      "DataStatus": 1,
+      "CreateTime": "2019-12-18T08:10:25",
+      "LastUpdateTime": "2019-12-18T08:10:52"
     }
   ]
 }

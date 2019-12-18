@@ -4,6 +4,10 @@ import VueRouter from 'vue-router'
 import WelcomePage from '../pages/WelcomePage.vue'
 import BookListPage from '../pages/BookListPage.vue'
 import BookCreatePage from '../pages/BookCreatePage.vue'
+import BookItemPage from '../pages/BookItemPage.vue'
+import Apple from '../components/Apple.vue'
+import Banana from '../components/Banana.vue'
+import BookDataTable from '../components/BookDataTable.vue'
 import _404 from '../pages/_404.vue'
 
 Vue.use(VueRouter)
@@ -23,6 +27,34 @@ const routes = [
         path: '/book/create',
         name: 'book-create-page',
         component: BookCreatePage,
+    },
+    {
+        path: '/book/1',
+        name: 'book-item-page',
+        component: BookItemPage,
+        redirect: '/book/1/p-apple',
+        children: [
+            {
+                path: 'p-apple',
+                name: 'book-item-page-n-apple',
+                component: Apple,
+            },
+            {
+                path: 'p-banana',
+                name: 'book-item-page-n-banana',
+                component: Banana,
+            },
+            {
+                path: 'p-candy',
+                name: 'book-item-page-n-candy',
+                component: BookDataTable,
+            },
+            {
+                path: '*',
+                name: 'book-item-page-other',
+                redirect: 'p-apple',
+            },
+        ]
     },
     {
         path: '/_404',

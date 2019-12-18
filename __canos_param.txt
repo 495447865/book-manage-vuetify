@@ -1415,131 +1415,274 @@
       }
     }
   },
-  "VuePageMap": {
-    "WelcomePage": {
-      "HtmlTag": {
-        "Component": {
-          "Name": "div",
-          "HtmlComponent": true,
-          "PropertyMap": {}
-        },
-        "Children": []
-      }
+  "PageList": [
+    {
+      "PageId": 1,
+      "Name": "WelcomePage",
+      "PageType": "standard",
+      "VuePage": {
+        "HtmlTag": {
+          "Component": {
+            "Name": "div",
+            "HtmlComponent": true,
+            "PropertyMap": {}
+          },
+          "Children": []
+        }
+      },
+      "VuePageTabList": []
     },
-    "_404": {
-      "HtmlTag": {
-        "Component": {
-          "Name": "div",
-          "HtmlComponent": true,
-          "PropertyMap": {}
-        },
-        "Children": []
-      }
+    {
+      "PageId": 2,
+      "Name": "_404",
+      "PageType": "standard",
+      "VuePage": {
+        "HtmlTag": {
+          "Component": {
+            "Name": "div",
+            "HtmlComponent": true,
+            "PropertyMap": {}
+          },
+          "Children": []
+        }
+      },
+      "VuePageTabList": []
     },
-    "BookListPage": {
-      "HtmlTag": {
-        "Component": {
-          "Name": "v-row",
-          "HtmlComponent": true,
-          "PropertyMap": {}
-        },
-        "Children": [
-          {
-            "Component": {
-              "Name": "v-col",
-              "HtmlComponent": true,
-              "PropertyMap": {}
-            },
-            "Children": [
-              {
-                "Component": {
-                  "Name": "BookDataTable",
-                  "HtmlComponent": false,
-                  "PropertyMap": {}
-                },
-                "Children": []
-              }
-            ]
+    {
+      "PageId": 3,
+      "Name": "BookListPage",
+      "PageType": "standard",
+      "VuePage": {
+        "HtmlTag": {
+          "Component": {
+            "Name": "v-row",
+            "HtmlComponent": true,
+            "PropertyMap": {}
+          },
+          "Children": [
+            {
+              "Component": {
+                "Name": "v-col",
+                "HtmlComponent": true,
+                "PropertyMap": {}
+              },
+              "Children": [
+                {
+                  "Component": {
+                    "Name": "BookDataTable",
+                    "HtmlComponent": false,
+                    "PropertyMap": {}
+                  },
+                  "Children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "VuePageTabList": []
+    },
+    {
+      "PageId": 4,
+      "Name": "BookCreatePage",
+      "PageType": "standard",
+      "VuePage": {
+        "HtmlTag": {
+          "Component": {
+            "Name": "v-row",
+            "HtmlComponent": true,
+            "PropertyMap": {}
+          },
+          "Children": [
+            {
+              "Component": {
+                "Name": "v-col",
+                "HtmlComponent": true,
+                "PropertyMap": {}
+              },
+              "Children": [
+                {
+                  "Component": {
+                    "Name": "BookForm",
+                    "HtmlComponent": false,
+                    "PropertyMap": {}
+                  },
+                  "Children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "VuePageTabList": []
+    },
+    {
+      "PageId": 5,
+      "Name": "BookItemPage",
+      "PageType": "tab",
+      "VuePage": null,
+      "VuePageTabList": [
+        {
+          "Name": "Apple",
+          "Text": "基本信息",
+          "Icon": null,
+          "RouteName": "n-apple",
+          "RoutePath": "p-apple",
+          "PageRouteName": "book-item-page-n-apple",
+          "PageRoutePath": "/book/1-p-apple",
+          "Component": {
+            "Name": "Apple",
+            "ComponentType": "html"
           }
-        ]
-      }
-    },
-    "BookCreatePage": {
-      "HtmlTag": {
-        "Component": {
-          "Name": "v-row",
-          "HtmlComponent": true,
-          "PropertyMap": {}
         },
-        "Children": [
-          {
-            "Component": {
-              "Name": "v-col",
-              "HtmlComponent": true,
-              "PropertyMap": {}
-            },
-            "Children": [
-              {
-                "Component": {
-                  "Name": "BookForm",
-                  "HtmlComponent": false,
-                  "PropertyMap": {}
-                },
-                "Children": []
-              }
-            ]
+        {
+          "Name": "Banana",
+          "Text": "扩展信息",
+          "Icon": null,
+          "RouteName": "n-banana",
+          "RoutePath": "p-banana",
+          "PageRouteName": "book-item-page-n-banana",
+          "PageRoutePath": "/book/1-p-banana",
+          "Component": {
+            "Name": "Banana",
+            "ComponentType": "html"
           }
-        ]
-      }
+        },
+        {
+          "Name": "Candy",
+          "Text": "其他",
+          "Icon": null,
+          "RouteName": "n-candy",
+          "RoutePath": "p-candy",
+          "PageRouteName": "book-item-page-n-candy",
+          "PageRoutePath": "/book/1-p-candy",
+          "Component": {
+            "Name": "BookDataTable",
+            "ComponentType": "subject"
+          }
+        }
+      ]
     }
-  },
-  "VueRouteMap": {
-    "welcome": {
+  ],
+  "VueRouteList": [
+    {
       "RedirectRouteId": 0,
       "PageId": 1,
       "Path": "/",
       "Name": "welcome",
-      "Component": "WelcomePage",
+      "Component": {
+        "Name": "WelcomePage",
+        "ComponentType": null
+      },
       "LazyLoad": false,
-      "Redirect": ""
+      "Redirect": "",
+      "Children": null
     },
-    "book-list-page": {
+    {
       "RedirectRouteId": 0,
       "PageId": 3,
       "Path": "/book",
       "Name": "book-list-page",
-      "Component": "BookListPage",
+      "Component": {
+        "Name": "BookListPage",
+        "ComponentType": null
+      },
       "LazyLoad": false,
-      "Redirect": ""
+      "Redirect": "",
+      "Children": null
     },
-    "book-create-page": {
+    {
       "RedirectRouteId": 0,
       "PageId": 4,
       "Path": "/book/create",
       "Name": "book-create-page",
-      "Component": "BookCreatePage",
+      "Component": {
+        "Name": "BookCreatePage",
+        "ComponentType": null
+      },
       "LazyLoad": false,
-      "Redirect": ""
+      "Redirect": "",
+      "Children": null
     },
-    "_404": {
+    {
+      "RedirectRouteId": 0,
+      "PageId": 5,
+      "Path": "/book/1",
+      "Name": "book-item-page",
+      "Component": {
+        "Name": "BookItemPage",
+        "ComponentType": null
+      },
+      "LazyLoad": false,
+      "Redirect": "/book/1/p-apple",
+      "Children": [
+        {
+          "Path": "p-apple",
+          "Name": "book-item-page-n-apple",
+          "Component": {
+            "Name": "Apple",
+            "ComponentType": "html"
+          },
+          "LazyLoad": false,
+          "Redirect": "",
+          "Children": null
+        },
+        {
+          "Path": "p-banana",
+          "Name": "book-item-page-n-banana",
+          "Component": {
+            "Name": "Banana",
+            "ComponentType": "html"
+          },
+          "LazyLoad": false,
+          "Redirect": "",
+          "Children": null
+        },
+        {
+          "Path": "p-candy",
+          "Name": "book-item-page-n-candy",
+          "Component": {
+            "Name": "BookDataTable",
+            "ComponentType": "subject"
+          },
+          "LazyLoad": false,
+          "Redirect": "",
+          "Children": null
+        },
+        {
+          "Path": "*",
+          "Name": "book-item-page-other",
+          "Component": null,
+          "LazyLoad": false,
+          "Redirect": "p-apple",
+          "Children": null
+        }
+      ]
+    },
+    {
       "RedirectRouteId": 0,
       "PageId": 2,
       "Path": "/_404",
       "Name": "_404",
-      "Component": "_404",
+      "Component": {
+        "Name": "_404",
+        "ComponentType": null
+      },
       "LazyLoad": false,
-      "Redirect": ""
+      "Redirect": "",
+      "Children": null
     },
-    "other": {
+    {
       "RedirectRouteId": 4,
       "PageId": 0,
       "Path": "*",
       "Name": "other",
-      "Component": "",
+      "Component": null,
       "LazyLoad": false,
-      "Redirect": "/_404"
+      "Redirect": "/_404",
+      "Children": null
     }
-  },
+  ],
   "MenuItemList": [
     {
       "Name": "WelcomeRoute",
