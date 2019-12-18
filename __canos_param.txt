@@ -1531,7 +1531,7 @@
           "PageRouteName": "book-item-page-n-apple",
           "PageRoutePath": "/book/1-p-apple",
           "Component": {
-            "Name": "Apple",
+            "Name": "TagDataTable",
             "ComponentType": "html"
           }
         },
@@ -1544,7 +1544,7 @@
           "PageRouteName": "book-item-page-n-banana",
           "PageRoutePath": "/book/1-p-banana",
           "Component": {
-            "Name": "Banana",
+            "Name": "PatternDataTable",
             "ComponentType": "html"
           }
         },
@@ -1557,7 +1557,7 @@
           "PageRouteName": "book-item-page-n-candy",
           "PageRoutePath": "/book/1-p-candy",
           "Component": {
-            "Name": "BookDataTable",
+            "Name": "CategoryDataTable",
             "ComponentType": "subject"
           }
         }
@@ -1620,7 +1620,7 @@
           "Path": "p-apple",
           "Name": "book-item-page-n-apple",
           "Component": {
-            "Name": "Apple",
+            "Name": "TagDataTable",
             "ComponentType": "html"
           },
           "LazyLoad": false,
@@ -1631,7 +1631,7 @@
           "Path": "p-banana",
           "Name": "book-item-page-n-banana",
           "Component": {
-            "Name": "Banana",
+            "Name": "PatternDataTable",
             "ComponentType": "html"
           },
           "LazyLoad": false,
@@ -1642,7 +1642,7 @@
           "Path": "p-candy",
           "Name": "book-item-page-n-candy",
           "Component": {
-            "Name": "BookDataTable",
+            "Name": "CategoryDataTable",
             "ComponentType": "subject"
           },
           "LazyLoad": false,
@@ -1703,6 +1703,13 @@
       "Text": "新增图书页",
       "Icon": "mdi-apps",
       "RouteName": "book-create-page",
+      "Children": []
+    },
+    {
+      "Name": "BookItemList",
+      "Text": "图书详情页",
+      "Icon": "mdi-apps",
+      "RouteName": "book-item-page",
       "Children": []
     }
   ]

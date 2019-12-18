@@ -35,6 +35,7 @@
                 { icon: 'mdi-home', text: '首页', route: 'welcome' },
                 { icon: 'mdi-apps', text: '图书列表页', route: 'book-list-page' },
                 { icon: 'mdi-apps', text: '新增图书页', route: 'book-create-page' },
+                { icon: 'mdi-apps', text: '图书详情页', route: 'book-item-page' },
             ],
         })
     }

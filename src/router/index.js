@@ -5,9 +5,9 @@ import WelcomePage from '../pages/WelcomePage.vue'
 import BookListPage from '../pages/BookListPage.vue'
 import BookCreatePage from '../pages/BookCreatePage.vue'
 import BookItemPage from '../pages/BookItemPage.vue'
-import Apple from '../components/Apple.vue'
-import Banana from '../components/Banana.vue'
-import BookDataTable from '../components/BookDataTable.vue'
+import TagDataTable from '../components/TagDataTable.vue'
+import PatternDataTable from '../components/PatternDataTable.vue'
+import CategoryDataTable from '../components/CategoryDataTable.vue'
 import _404 from '../pages/_404.vue'
 
 Vue.use(VueRouter)
@@ -37,17 +37,17 @@ const routes = [
             {
                 path: 'p-apple',
                 name: 'book-item-page-n-apple',
-                component: Apple,
+                component: TagDataTable,
             },
             {
                 path: 'p-banana',
                 name: 'book-item-page-n-banana',
-                component: Banana,
+                component: PatternDataTable,
             },
             {
                 path: 'p-candy',
                 name: 'book-item-page-n-candy',
-                component: BookDataTable,
+                component: CategoryDataTable,
             },
             {
                 path: '*',

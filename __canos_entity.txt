@@ -841,6 +841,19 @@
       "DataStatus": 1,
       "CreateTime": "2019-12-16T07:44:35",
       "LastUpdateTime": "2019-12-17T00:08:06"
+    },
+    {
+      "Id": 7,
+      "ProjectName": "BookManage",
+      "Name": "BookItemList",
+      "Icon": "mdi-apps",
+      "Text": "图书详情页",
+      "RouteId": 6,
+      "ParentId": 0,
+      "Position": 3,
+      "DataStatus": 1,
+      "CreateTime": "2019-12-18T14:25:15",
+      "LastUpdateTime": "2019-12-18T14:25:15"
     }
   ],
   "PageTabEntityList": [
@@ -894,7 +907,7 @@
     {
       "Id": 1,
       "ProjectName": "BookManage",
-      "Name": "Apple",
+      "Name": "TagDataTable",
       "ComponentType": "html",
       "Remark": "组件一",
       "DataStatus": 1,
@@ -904,7 +917,7 @@
     {
       "Id": 2,
       "ProjectName": "BookManage",
-      "Name": "Banana",
+      "Name": "PatternDataTable",
       "ComponentType": "html",
       "Remark": "组件二",
       "DataStatus": 1,
@@ -914,7 +927,7 @@
     {
       "Id": 3,
       "ProjectName": "BookManage",
-      "Name": "BookDataTable",
+      "Name": "CategoryDataTable",
       "ComponentType": "subject",
       "Remark": "组件三",
       "DataStatus": 1,
