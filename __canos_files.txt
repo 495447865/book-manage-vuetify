@@ -25,6 +25,7 @@ src\pages\BookListPage.vue
 src\pages\BookCreatePage.vue
 src\pages\BookItemPage.vue
 scripts_mysql.sql
+Dockerfile
 
 .browserslistrc
 .eslintrc.js
