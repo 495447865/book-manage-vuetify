@@ -31,6 +31,7 @@ Dockerfile
 .eslintrc.js
 .gitignore
 babel.config.js
+default.conf
 postcss.config.js
 README.md
 vue.config.js
