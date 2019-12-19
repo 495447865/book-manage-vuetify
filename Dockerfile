@@ -13,3 +13,5 @@ FROM nginx:1.17.5
 MAINTAINER harriszhang@live.cn
 
 COPY --from=VUETIFY_TOOL_CHAIN /tmp/dist /usr/share/nginx/html
+
+COPY  default.conf /etc/nginx/conf.d
